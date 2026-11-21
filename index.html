@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maglia - Toko Jersey Bola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <button id="tombol-menu" class="menu-btn">☰ MENU</button>
+        <a href="index.html" class="logo">LA MAGLIA</a>
+        <a href="keranjang.html" class="nav-keranjang">KERANJANG (<span id="jumlah-keranjang">0</span>)</a>
+    </header>
+
+    <aside id="sidebar" class="sidebar">
+        <button id="tutup-menu" class="tutup">&times;</button>
+        <nav>
+            <a href="index.html">Semua Jersey</a>
+            <a href="index.html#serie-a">Serie A</a>
+            <a href="index.html#la-liga">La Liga</a>
+            <a href="index.html#premier-league">Premier League</a>
+            <a href="index.html#timnas">Timnas</a>
+            <a href="keranjang.html">Keranjang</a>
+            <button id="tombol-tema" class="tema-btn">☀️ Mode Terang</button>
+        </nav>
+    </aside>
+    <div id="overlay"></div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-isi">
+                <p class="tagline">Forza, pakai jersey kebanggaanmu</p>
+                <h1 class="hero-judul">LA MAGLIA</h1>
+                <a href="#koleksi" class="btn btn-putih">Lihat Koleksi</a>
+            </div>
+        </section>
+
+        <section id="koleksi" class="container">
+            <div class="section-header">
+                <h2>Koleksi Jersey</h2>
+                <div class="filter">
+                    <button data-liga="semua" class="aktif">Semua</button>
+                    <button data-liga="Serie A">Serie A</button>
+                    <button data-liga="La Liga">La Liga</button>
+                    <button data-liga="Premier League">Premier League</button>
+                    <button data-liga="Timnas">Timnas</button>
+                </div>
+            </div>
+            <div id="daftar-produk" class="produk-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>LA MAGLIA | Dibuat oleh: Putra Arianto | SC-FE Basic</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
